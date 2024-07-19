@@ -53,13 +53,13 @@ const ImageUpload: React.FC = () => {
 
   return (
     <div>
-      <form onSubmit={handleSubmit} encType="multipart/form-data">
+      <form onSubmit={handleSubmit} encType="multipart/form-data" data-testid="upload-form">
         <FileInput onChange={handleFileChange} />
-        <button type="submit">Upload Image</button>
+        <button type="submit" data-testid="submit-button">Upload Image</button>
       </form>
-      {loading && <p>Analyzing image...</p>}
-      {result && <p>Result: {result}</p>}
-      {error && <p>Error: {error}</p>}
+      {loading && <p data-testid="loading">Analyzing image...</p>}
+      {result && <p data-testid="result">Result: {result}</p>}
+      {error && <p data-testid="error">Error: {error}</p>}
     </div>
   );
 };

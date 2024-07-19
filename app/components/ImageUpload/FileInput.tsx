@@ -6,7 +6,7 @@ interface FileInputProps {
 
 const FileInput: React.FC<FileInputProps> = ({ onChange }) => {
   return (
-    <input type="file" name="image" accept="image/*" onChange={onChange} />
+    <input type="file" name="image" accept="image/*" onChange={onChange} data-testid="file-input" />
   );
 };
 
