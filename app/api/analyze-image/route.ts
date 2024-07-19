@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { openai } from '@ai-sdk/openai';
-import { generateText, OpenAIStream, StreamingTextResponse } from 'ai';
+import { generateText } from 'ai';
 
 export async function POST(req: Request) {
   if (!req.headers.get('content-type')?.includes('multipart/form-data')) {
