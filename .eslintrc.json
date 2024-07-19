@@ -1,8 +1,10 @@
 {
   "extends": [
-    "eslint:recommended",
-    "plugin:@next/next/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "prettier"
-  ]
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "parser": "@typescript-eslint/parser"
 }
