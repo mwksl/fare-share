@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import ImageUpload from '../../app/components/ImageUpload';
+import ImageUpload from '../../app/components/ImageUpload/ImageUpload';
 
 describe('ImageUpload', () => {
   it('renders the upload form with all expected elements', () => {

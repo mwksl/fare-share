@@ -1,4 +1,4 @@
-import ImageUpload from '@/app/components/ImageUpload'
+import ImageUpload from '@/app/components/ImageUpload/ImageUpload'
 
 export default function Home() {
   return (

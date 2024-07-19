@@ -1,6 +1,6 @@
 import React from 'react'
 import { render, screen, fireEvent } from '@testing-library/react'
-import FileInput from '@/app/components/FileInput'
+import FileInput from '@/app/components/ImageUpload/FileInput'
 
 describe('FileInput', () => {
   it('renders with default text', () => {
